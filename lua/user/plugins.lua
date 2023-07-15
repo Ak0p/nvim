@@ -21,6 +21,11 @@ require("lazy").setup({
 		"folke/which-key.nvim",
 		opts = {},
 	},
+    -- Tmux Navigation
+    {
+      "christoomey/vim-tmux-navigator",
+      lazy = false,
+    },
 	-- Comments
 	{
 		"numToStr/Comment.nvim",
