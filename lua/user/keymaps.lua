@@ -27,7 +27,7 @@ keymap("n", "<leader>g", "<cmd>Telescope live_grep<CR>", opts)
 
 -- Window Splitting
 
-keymap("n", "<leader>s", "<C-w>s", opts)
+keymap("n", "<leader>h", "<C-w>s", opts)
 keymap("n", "<leader>v", "<C-w>v", opts)
 
 -- Window control
