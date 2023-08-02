@@ -21,11 +21,18 @@ require("lazy").setup({
 		"folke/which-key.nvim",
 		opts = {},
 	},
-    -- Tmux Navigation
-    {
-      "christoomey/vim-tmux-navigator",
-      lazy = false,
-    },
+	{
+		"github/copilot.vim",
+	},
+	-- Method overload navitation
+	{
+		"Issafalcon/lsp-overloads.nvim",
+	},
+	-- Tmux Navigation
+	{
+		"christoomey/vim-tmux-navigator",
+		lazy = false,
+	},
 	-- Comments
 	{
 		"numToStr/Comment.nvim",

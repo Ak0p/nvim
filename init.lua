@@ -9,3 +9,6 @@ require "user.cmp"
 require "user.autopairs"
 require "user.comment"
 require "user.toggleterm"
+require "user.treesitter"
+require "user.copilot"
+

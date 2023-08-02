@@ -80,6 +80,14 @@ keymap("n", "<S-n>", ":tabnew<CR>", opts)
 -- Press jk fast to enter
 --keymap("i", "jk", "<ESC>", opts)
 
+
+-- Copilot
+--         imap <silent><script><expr> <C-J> copilot#Accept("\<CR>")
+        keymap("i", "<C-a>", "copilot#Accept(\"<CR>\")", { silent = true, script = true, expr = true })
+--
+--         
+
+
 -- Visual --
 -- Stay in indent mode
 keymap("v", "<", "<gv", opts)
