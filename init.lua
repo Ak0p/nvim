@@ -11,4 +11,4 @@ require "user.comment"
 require "user.toggleterm"
 require "user.treesitter"
 require "user.copilot"
-
+require "user.java"

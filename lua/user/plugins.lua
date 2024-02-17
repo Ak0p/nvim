@@ -170,8 +170,30 @@ require("lazy").setup({
 	},
 
 	-- Formatter
+	{
+		"nvimtools/none-ls.nvim",
+	},
 
 	{
-		"jose-elias-alvarez/null-ls.nvim",
+		"saecki/crates.nvim",
+		event = { "BufRead Cargo.toml" },
+		dependencies = { "nvim-lua/plenary.nvim" },
+		config = function()
+			require("crates").setup()
+		end,
+	},
+	-- Debugger
+	{
+		"mfussenegger/nvim-dap",
+	},
+    -- Markdown Preview
+	{
+		"iamcco/markdown-preview.nvim",
+		cmd = { "MarkdownPreviewToggle", "MarkdownPreview", "MarkdownPreviewStop" },
+		build = "cd app && yarn install",
+		init = function()
+			vim.g.mkdp_filetypes = { "markdown" }
+		end,
+		ft = { "markdown" },
 	},
 })

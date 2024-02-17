@@ -1,3 +1,4 @@
+local P = {}
 local opts = { noremap = true, silent = true }
 
 local term_opts = { silent = true }
@@ -66,7 +67,7 @@ keymap("n", "tj", ":bprevious<CR>", opts)
 keymap("n", "th", ":bfirst<CR>", opts)
 keymap("n", "tl", ":blast<CR>", opts)
 keymap("n", "td", ":bdelete<CR>", opts)
-keymap("n", "tn", ":bnew<CR>", opts)
+keymap("n", "tn", ":new<CR>", opts)
 
 -- Navigate tabs
 
@@ -74,7 +75,7 @@ keymap("n", "<S-k>", ":tabnext<CR>", opts)
 keymap("n", "<S-j>", ":tabprevious<CR>", opts)
 keymap("n", "<S-h>", ":tabfirst<CR>", opts)
 keymap("n", "<S-l>", ":tablast<CR>", opts)
-keymap("n", "<S-n>", ":tabnew<CR>", opts)
+-- keymap("n", "<C-S-n>", ":tabnew<CR>", opts)
 
 -- Insert --
 -- Press jk fast to enter
@@ -111,3 +112,16 @@ keymap("t", "<C-h>", "<C-\\><C-N><C-w>h", term_opts)
 keymap("t", "<C-j>", "<C-\\><C-N><C-w>j", term_opts)
 keymap("t", "<C-k>", "<C-\\><C-N><C-w>k", term_opts)
 keymap("t", "<C-l>", "<C-\\><C-N><C-w>l", term_opts)
+
+-- Java 
+
+-- function P.map_java_keys(bufnr)
+--
+-- keymap("n", "<leader>n", "<cmd>lua require'jdtls'.organize_imports()<CR>", opts)
+-- keymap("n", "<leader>c", "<cmd>lua require'jdtls'.compile('incremental')", opts)
+--
+-- end
+
+return P
+
+

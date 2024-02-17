@@ -1,12 +1,18 @@
 local servers = {
 	"lua_ls",
 	"clangd",
-	 "rust_analyzer",
+	"rust_analyzer",
 	"jdtls",
-	"pylsp",
+	"pyright",
 	"bashls",
 	"jsonls",
 	"neocmake",
+    "taplo",
+    "tsserver",
+    "sqlls",
+    "html",
+    "cssls",
+    "ansiblels"
 }
 
 local settings = {

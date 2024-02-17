@@ -30,6 +30,19 @@ capabilities = require("cmp_nvim_lsp").default_capabilities(capabilities)
 require("lspconfig").clangd.setup({
   on_attach = on_attach,
   capabilities = capabilities,
+  filetypes = {"rust"},
+  init_options = {
+    userLanguages = {
+      rust = "html",
+    },
+  },
+  settings = {
+    ['rust-analyzer'] = {
+      cargo = {
+        allFeatures = true,
+      },
+    },
+  },
 })
 
 require("lspconfig").rust_analyzer.setup({
@@ -42,7 +55,7 @@ require("lspconfig").jdtls.setup({
   capabilities = capabilities,
 })
 
-require("lspconfig").pylsp.setup({
+require("lspconfig").pyright.setup({
   on_attach = on_attach,
   capabilities = capabilities,
 })
@@ -61,3 +74,20 @@ require("lspconfig").jsonls.setup({
   on_attach = on_attach,
   capabilities = capabilities,
 })
+require("lspconfig").sqlls.setup({
+  on_attach = on_attach,
+  capabilities = capabilities,
+})
+require("lspconfig").tsserver.setup({
+  on_attach = on_attach,
+  capabilities = capabilities,
+})
+require("lspconfig").taplo.setup({
+  on_attach = on_attach,
+  capabilities = capabilities,
+})
+require("lspconfig").ansiblels.setup({
+  on_attach = on_attach,
+  capabilities = capabilities,
+})
+
