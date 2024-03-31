@@ -84,7 +84,7 @@ keymap("n", "<S-l>", ":tablast<CR>", opts)
 
 -- Copilot
 --         imap <silent><script><expr> <C-J> copilot#Accept("\<CR>")
-        keymap("i", "<C-a>", "copilot#Accept(\"<CR>\")", { silent = true, script = true, expr = true })
+        -- keymap("i", "<C-a>", "copilot#Accept(\"<CR>\")", { silent = true, script = true, expr = true })
 --
 --         
 

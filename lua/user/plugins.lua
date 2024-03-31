@@ -21,9 +21,9 @@ require("lazy").setup({
 		"folke/which-key.nvim",
 		opts = {},
 	},
-	{
-		"github/copilot.vim",
-	},
+	-- {
+	-- 	"github/copilot.vim",
+	-- },
 	-- Method overload navitation
 	{
 		"Issafalcon/lsp-overloads.nvim",
