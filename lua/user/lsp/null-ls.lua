@@ -19,5 +19,6 @@ null_ls.setup({
 		null_ls.builtins.formatting.stylua,
 		null_ls.builtins.formatting.rustfmt,
         null_ls.builtins.diagnostics.ruff,
+        null_ls.builtins.diagnostics.pylint
 	},
 })

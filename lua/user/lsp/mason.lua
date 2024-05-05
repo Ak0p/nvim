@@ -12,7 +12,7 @@ local servers = {
     "sqlls",
     "html",
     "cssls",
-    "ansiblels"
+    "ansiblels",
 }
 
 local settings = {
